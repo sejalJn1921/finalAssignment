@@ -1,0 +1,150 @@
+.navCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(61, 85, 186);
+    height: 100px;
+}
+.iconCW{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    
+    }
+.searchCont{
+    width: 20%;
+}
+.searchCont .form-inline{
+
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+}
+.catCont{
+    width: 50%;
+   
+    
+}
+.catCont a{
+    margin-right: 30px;
+}
+.category{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: none;
+}
+.homeCont{
+    padding-left: 15px;
+    width: 10%;
+    font-weight: 700;
+    font-size:x-large;
+    color: rgb(255, 254, 254);
+}
+.example-icon {
+    color: rgb(61, 85, 186);
+}
+.wishlist-card {
+    width: 80% !important;
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+  .wishlist-item {
+    width: 80% !important;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    padding: 20px;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .wishlist-item-image {
+    height: 100%;
+    width: 100%;
+  }
+  .container{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      padding: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
+  .image-div {
+    height: 100%;
+    width: 20%;
+  }
+  .example-card {
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    position: relative;
+   
+  }
+  
+  .example-header-image {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+  }
+  .description{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+  }
+  mat-card-header, .card-context{
+      display: block;
+      text-align: center;
+    
+      margin-top: 14px !important;
+      width: 100% !important;
+  }
+  .card-button{
+    
+      width: 100%;
+      
+  
+  }
+  .card-image{
+      height: 150px;
+      width: 100%;
+      margin-top: 11px !important;
+  }
+  .card-image img {
+      height: 100%;
+      object-fit: contain;
+     
+  }
+  .card-icon{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+     
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      
+  }
+  
+  ::ng-deep .carousel-indicators{
+      margin-bottom: 0!important;
+  }
+  .home{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    width: 100px;
+    height: 38px;
+   
+}
+.navIcons {
+    margin: 10px;
+    background: rgb(255, 255, 255);
+}

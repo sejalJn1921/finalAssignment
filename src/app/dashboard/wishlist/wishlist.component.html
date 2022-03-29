@@ -1,0 +1,61 @@
+<!-- <p>wishlist works!</p> -->
+<div>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <!-- <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button> -->
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <mat-card class="wishlist-card">My Wishlist</mat-card>
+  <div class="container">
+  <div *ngFor="let item of productList">
+    <mat-card class="example-card">
+        <div class="card-icon">
+          <mat-icon style="color: rgb(61, 61, 61)">close</mat-icon>
+        </div>
+      <div class="card-image">
+        <!-- src="https://rukminim2.flixcart.com/image/416/416/kqgyhe80/computer/d/l/f/g15-5510-notebook-dell-original-imag4gy96ahhtmvz.jpeg?q=70" -->
+        <img
+          mat-card-image
+          [(src)]="item.images[0]"     
+        />
+      </div>
+      <mat-card-content>
+        <mat-card-header class="card-context">
+          <mat-card-title class="description">{{ item.title }}</mat-card-title>
+          <mat-card-subtitle style="font-weight: bold"
+            >{{ item.price }}</mat-card-subtitle
+          >
+        </mat-card-header>
+        
+      </mat-card-content>
+      <div class="card-button" >
+        <button mat-button class="card-button">MOVE TO CART</button>
+      </div>
+    </mat-card>
+  </div>
+  
+  
+  
+  </div>
+  

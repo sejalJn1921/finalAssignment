@@ -1,0 +1,54 @@
+<!-- <p>cart works!</p> -->
+<div>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        
+      </button>
+      <div class="homeCont">
+        <button class="home" (click)="onHome()">Home</button>
+      </div>
+        
+    </mat-toolbar>
+  </div>
+  <div class="container">
+    <mat-card class="cart-card">
+      <div class="heading">
+        <span>My Cart</span>
+      </div>
+      <div *ngFor="let item of data_in_cart">
+        <div class="example-card">
+          <div class="card-image">
+            <img
+              [(src)]="item.Image.token1"
+              alt="Photo"
+            />
+          </div>
+          <div class="product-description">
+            <span>{{item.Name}}</span>
+           
+            <span style="font-size: large; font-weight: 500">Rs {{item.Price}}</span>
+            <div style="display: flex; align-items: center">
+              
+              
+            </div>
+          </div>
+          <div class="delete-product">
+            <button
+              mat-fab
+              color="primary"
+              aria-label="Example icon button with a delete icon"
+            >
+              <mat-icon (click)="removeFromCart(item.Name)">delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+    </mat-card>
+    
+  </div>
+  

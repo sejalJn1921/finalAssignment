@@ -1,0 +1,12 @@
+.formCol{justify-content: center;
+    padding: 70px;
+}
+.loginButton{
+    display: flex;
+    justify-content: center;
+}
+.registerCol{
+    width: 100%;
+   text-align: center;
+   padding: 10px;
+}

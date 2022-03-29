@@ -1,0 +1,61 @@
+
+<div >
+
+<div class="navCont">
+  <h3>E-COM</h3>
+  <div class="homeCont">
+    <button class="home" (click)="onHome()">Home</button>
+  </div>
+  <div class="catCont">
+    <a  *ngFor="let item of Data | keyvalue"> 
+      <button class="category" (click)="onRoute(item.key)" >{{ item.key }} </button>
+      
+    </a>
+  </div>
+  <div class="searchCont">
+    
+  </div>
+  <div class="iconCW">
+    
+  <button
+    mat-icon-button
+    class="example-icon navIcons"
+    aria-label="Example icon-button with share icon"
+    (click)="inCart()"
+  >
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
+  </div>
+</div>
+<div class="container" style="flex-wrap: wrap; justify-content: flex-start;">
+  <div *ngFor="let item of  Content | keyvalue">
+    <mat-card class="example-card" style="height: auto"> 
+      <div class="card-icon">
+       
+      </div>      
+      <div class="card-image">
+              <img
+        style="max-height: 15rem"
+          mat-card-image
+          [(src)]="Content[item.key].Image.token1"
+          
+        />
+      </div>
+      <mat-card-content>
+        <mat-card-header class="card-context">
+          <mat-card-title class="description">{{ Content[item.key].Name}}</mat-card-title>
+          <mat-card-subtitle style="font-weight: bold"
+            >Price: Rs {{ Content[item.key].Price}}</mat-card-subtitle
+          >
+        </mat-card-header>
+       
+      </mat-card-content>
+      <div class="card-button" style="display: flex; justify-content: center;" >
+        <div style="border-radius: 5px; background-color: black; color: white;">
+          <button mat-button class="card-button" (click)="addtoCart(item.key)">MOVE TO CART</button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+</div>

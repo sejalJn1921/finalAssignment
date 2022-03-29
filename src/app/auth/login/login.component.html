@@ -1,0 +1,51 @@
+<!-- <p>login works!</p> -->
+<div class="container-fluid">
+  <div class="row mt-5 formCol">
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <h3 class="text-dark test-muted">Enter the details to Login</h3>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                name="email"
+                [(ngModel)]="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                name="password"
+                [(ngModel)]="password"
+              />
+            </div>
+            <div class="loginButton">
+              <button type="button" class="btn btn-info" (click)="login()">
+                Login
+              </button>
+            </div>
+            <div class="row">
+              <div class="registerCol">
+                <a href="/register" style="text-decoration: none"
+                  >New User ?
+                  <span style="text-decoration: danger"
+                    >Register Yourself Here
+                  </span></a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
